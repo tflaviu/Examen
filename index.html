@@ -4,6 +4,8 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="vendor/slick-1.8.0/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="vendor/slick-1.8.0/slick/slick-theme.css">s"/>
     </head>
 
     <body>
@@ -53,8 +55,12 @@
         <div class="main-container container-fluid">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                    <div class="head_img"></div>
-                    <p class="title"><strong>Welcome to SevenOacks</strong> which is <br> run by friends of SevenOacks</p>
+                    <div class="head_img">
+                    </div>
+                    <div class="title">
+                    <p><strong>Welcome to SevenOacks</strong> which is <br> run by friends of SevenOacks</p>
+                    <p><strong>Welcome to Lorem Ipsum</strong> which is <br> lorem ipsum dummy text</p>
+                        </div>
                 </div>
             </div>
             <div class="row">
@@ -116,10 +122,12 @@
         <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="vendor/slick-1.8.0/slick/slick.js"></script>
+        <script type="text/javascript" src="vendor/slick-1.8.0/slick/slick.min.js"></script>
 
 
-        <script>
-            $(document).ready(function()  {
+            <script>
+                $(document).ready(function()  {
                 $.getJSON('https://baconipsum.com/api/?callback=?', 
                           { 'type':'meat-and-filler', 'start-with-lorem':'1', 'paras':'3' }, 
                           function(baconGoodness)
@@ -132,6 +140,15 @@
                         $("#bacon").show();
                     }
                 });
+            });
+        </script>
+
+        <script>
+            $('.title').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
             });
         </script>
 
