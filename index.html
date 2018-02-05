@@ -58,9 +58,9 @@
                     <div class="head_img">
                     </div>
                     <div class="title">
-                    <p><strong>Welcome to SevenOacks</strong> which is <br> run by friends of SevenOacks</p>
-                    <p><strong>Welcome to Lorem Ipsum</strong> which is <br> lorem ipsum dummy text</p>
-                        </div>
+                        <p><strong>Welcome to SevenOacks</strong> which is <br> run by friends of SevenOacks</p>
+                        <p><strong>Welcome to Lorem Ipsum</strong> which is <br> lorem ipsum dummy text</p>
+                    </div>
                 </div>
             </div>
             <div class="row">
@@ -78,8 +78,8 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                    <span class="upc-ev mx-auto">UPCOMING EVENTS</span>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <span class="upc-ev offset-5"><strong>UPCOMING EVENTS</strong></span>
                 </div>
             </div>
             <div class="row">
@@ -111,13 +111,38 @@
             </div>
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                    <span class="upc-ev mx-auto">SEVENOACKS</span>
+                    <span class="upc-ev offset-5"><strong>SEVENOACKS</strong></span>
                     <p id="bacon">
                     </p>
                 </div>
             </div>
         </div>
 
+
+        <div class="footer container-fluid">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-xl-3 col-lg-3">
+                    <span class="offset-4">SIGNUP TO OUR NEWSLETTER</span><br>
+                    <button class="btn btn-primary offset-5">EMAIL SIGNUP</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-xl-3 col-lg-3">
+                    <span class="offset-5">Lorem Ipsum</span><br>
+                    <span class="offset-5">Lorem ipsum 9 pm</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-xl-3 col-lg-3">
+                    <span class="offset-5">CONNECT WITH US</span>
+                    <span class="offset-5"><i class="fa fa-facebook-f"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-pinterest"></i>
+                        <i class="fa fa-gmail"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
 
         <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -126,8 +151,8 @@
         <script type="text/javascript" src="vendor/slick-1.8.0/slick/slick.min.js"></script>
 
 
-            <script>
-                $(document).ready(function()  {
+        <script>
+            $(document).ready(function()  {
                 $.getJSON('https://baconipsum.com/api/?callback=?', 
                           { 'type':'meat-and-filler', 'start-with-lorem':'1', 'paras':'3' }, 
                           function(baconGoodness)

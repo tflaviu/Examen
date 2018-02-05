@@ -11,7 +11,7 @@
 }
 
 html {
-    font-size: $html-font-size;
+    font-size: 20px;
     width: $html-width;
 }
 
@@ -62,8 +62,8 @@ body {
     font-size: 30px;
 
     @include respond-to(md-screen) {
-        margin-left: 76%;
-        margin-top: 10%;
+        margin-left: 74%;
+        margin-top: 8%;
     }
 }
 
@@ -111,4 +111,10 @@ body {
 
 .green {
     color: green;
+}
+
+.footer {
+    background: gray;
+    height: 180px;
+    color: #fff;
 }

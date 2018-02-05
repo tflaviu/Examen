@@ -1,5 +1,5 @@
 html {
-  font-size: 9px;
+  font-size: 20px;
   width: 100%; }
 
 body {
@@ -42,8 +42,8 @@ body {
   font-size: 30px; }
   @media all and (min-width: 576px) and (max-width: 991px) {
     .name {
-      margin-left: 76%;
-      margin-top: 10%; } }
+      margin-left: 74%;
+      margin-top: 8%; } }
 
 .with-bg {
   color: #fff;
@@ -79,5 +79,10 @@ body {
 
 .green {
   color: green; }
+
+.footer {
+  background: gray;
+  height: 180px;
+  color: #fff; }
 
 /*# sourceMappingURL=style.css.map */
