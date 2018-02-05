@@ -10,7 +10,8 @@ body {
   left: 0;
   right: 0;
   background: #000000;
-  width: 100%; }
+  width: 100%;
+  font-family: 'Proxima Nova', Georgia, sans-serif; }
 
 .head_img {
   width: 100%;
