@@ -1,0 +1,114 @@
+@import "variable";
+
+@mixin respond-to($media) {
+    @if $media == sm-screen {
+        @media all and (max-width: $sm-max-width) { @content; }
+    } @else if $media == md-screen {
+        @media all and (min-width: $md-min-width) and (max-width: $md-max-width) { @content; }
+    } @else if $media == lg-screen {
+        @media (min-width: $lg-min-width) { @content; }
+    }
+}
+
+html {
+    font-size: $html-font-size;
+    width: $html-width;
+}
+
+body {
+    margin: 0; 
+    padding: 0; 
+    top: 0;
+    bottom: 0; 
+    left: 0;
+    right: 0;
+    background: $color-2;
+    width: $body-width;
+}
+
+.head_img {
+    width: 100%;
+    height: 500px;
+    //    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url("../images/bg_img.jpg");
+
+    @include respond-to(sm-screen) {
+        height: 323px;
+    }
+    @include respond-to(md-screen) {
+        height: 557px;
+    }
+}
+
+.title {
+    z-index: 999999999999999;
+    margin-top: -30%;
+    margin-left: 35%;
+    position: absolute;
+    padding: 50px;
+    color: #fff;
+    font-size: 20px;
+    background-color: rgba(25, 97, 214, 0.3);
+}
+
+.about-pic {
+    height: 200px;
+    color: #fff;
+}
+
+.name {
+    color: #fff;
+    font-size: 30px;
+
+    @include respond-to(md-screen) {
+        margin-left: 76%;
+        margin-top: 10%;
+    }
+}
+
+.with-bg {
+    color: #fff;
+    font-size: 20px; 
+    
+    @include respond-to(md-screen) {
+        margin-left: 70%;
+        padding: 15px;
+    }
+}
+
+.about-pic1 {
+    background-image: url("../images/img1.jpg");
+    .with-bg {
+        background: rgba(25, 97, 214, 0.3);
+    }
+}
+
+.about-pic2 {
+    background-image: url("../images/img2.jpg");
+    .with-bg {
+        background: rgba(66, 244, 134, 0.3);
+    }
+}
+
+.about-pic3 {
+    background-image: url("../images/img3.jpg");
+    .with-bg {
+        background: rgba(239, 26, 26, 0.3);
+    }
+}
+
+.upc-ev {
+    margin-top: 20px;
+    color: blue;
+    text-align: center;
+    font-size: 20px;
+}
+
+.orange {
+    color: orange;
+}
+
+.green {
+    color: green;
+}
