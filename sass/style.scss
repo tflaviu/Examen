@@ -29,7 +29,6 @@ body {
 .head_img {
     width: 100%;
     height: 500px;
-    //    position: absolute;
     background-repeat: no-repeat;
     background-image: url("../images/bg_img.jpg");
 
@@ -44,17 +43,22 @@ body {
 .title {
     z-index: 999999999999999;
     margin-top: -30%;
-//    margin-left: 35%;
     position: absolute;
     padding: 50px;
     color: #fff;
     font-size: 20px;
+    margin-left: 20%;
+    width: 500px;
     background-color: rgba(25, 97, 214, 0.3);
 }
 
 .about-pic {
     height: 200px;
     color: #fff;
+    @include respond-to(lg-screen) {
+        margin-top: 250px;  
+    }
+    margin-bottom: 50px;
 }
 
 .name {
@@ -65,15 +69,27 @@ body {
         margin-left: 74%;
         margin-top: 8%;
     }
+    @include respond-to(lg-screen) {
+        margin-left: 60%;
+        margin-top: 60%;
+        font-size: 20px;
+    }
 }
 
 .with-bg {
     color: #fff;
     font-size: 20px; 
-    
+
     @include respond-to(md-screen) {
         margin-left: 70%;
         padding: 15px;
+    }
+
+    @include respond-to(lg-screen) {
+        margin-top: 1%;
+        margin-left: 4%;
+        padding: 5px;
+        font-size: 15px;
     }
 }
 
@@ -99,6 +115,7 @@ body {
 }
 
 .upc-ev {
+
     margin-top: 20px;
     color: blue;
     text-align: center;
@@ -115,6 +132,11 @@ body {
 
 .footer {
     background: gray;
-    height: 180px;
+    height: 250px;
     color: #fff;
+}
+
+hr {
+    width: 100%;
+    color: #000;
 }
